@@ -4,7 +4,7 @@ This chatbot will take youtube URL as an input , generate transcript from youtub
  - Open AI LLM
  - Python
  - YouTube python library used to extract Transcript  -"youtube-transcript-api"
- - Webshare proxy to avoid blocking your IP by youtube. https://www.webshare.io , using free account.
+ - Webshare proxy to avoid blocking your IP by youtube. https://www.webshare.io , using free account. then can find proxy setting here -https://dashboard.webshare.io/proxy/settings
  - All required dependencies are in requirements.txt
 
 Sample of you tube URL- https://www.youtube.com/watch?v=bPrmA1SEN2k
