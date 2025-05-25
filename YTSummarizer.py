@@ -10,7 +10,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 # Set up OpenAI API key
 #testing URL https://www.youtube.com/watch?v=bPrmA1SEN2k
 openai.api_key = st.secrets.get("OPENAI_API_KEY")
-# Function to extract transcript from YouTube video
+
 
 langchain_api_key = st.secrets.get("LANGCHAIN_API_KEY")
 unique_id = uuid4().hex[0:8]
@@ -21,6 +21,7 @@ os.environ.update({
     "LANGCHAIN_API_KEY": langchain_api_key
 })
 
+#Function to extract transcript from YouTube video
 def get_youtube_transcript(video_url):
     video_id = video_url.split("v=")[1].split("&")[0]
     transcript = YouTubeTranscriptApi.get_transcript(video_id)
