@@ -4,6 +4,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage
 from youtube_transcript_api import YouTubeTranscriptApi
 import ssl
+from uuid import uuid4
 ssl._create_default_https_context = ssl._create_unverified_context
 
 # Set up OpenAI API key
@@ -11,6 +12,14 @@ ssl._create_default_https_context = ssl._create_unverified_context
 openai.api_key = st.secrets.get("OPENAI_API_KEY")
 # Function to extract transcript from YouTube video
 
+langchain_api_key = st.secrets.get("LANGCHAIN_API_KEY")
+unique_id = uuid4().hex[0:8]
+os.environ.update({
+    "LANGCHAIN_TRACING_V2": "true",
+    "LANGCHAIN_PROJECT": f"AI Research Agent - {unique_id}",
+    "LANGCHAIN_ENDPOINT": "https://api.smith.langchain.com",
+    "LANGCHAIN_API_KEY": langchain_api_key
+})
 
 def get_youtube_transcript(video_url):
     video_id = video_url.split("v=")[1].split("&")[0]
