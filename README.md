@@ -1,6 +1,7 @@
-This chatbot will take you tube URL as input , generate transcript and summarize for you.
+This chatbot will take youtube URL as an input , generate transcript from youtube video and summarize for you.
 Sampple of you tube URL- https://www.youtube.com/watch?v=bPrmA1SEN2k
-Sample screen is below -
+
+Sample screens are below -
 <img width="1647" alt="image" src="https://github.com/user-attachments/assets/adf1e976-fd0b-4bcd-8ad0-047ff7b1d604" />
 
 
