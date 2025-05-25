@@ -4,6 +4,7 @@ This chatbot will take youtube URL as an input , generate transcript from youtub
  - Open AI LLM
  - Python
  - YouTube python library used to extract Transcript  -"youtube-transcript-api"
+ - All required dependencies are in requirements.txt
 
 Sample of you tube URL- https://www.youtube.com/watch?v=bPrmA1SEN2k
 
