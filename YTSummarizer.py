@@ -43,7 +43,7 @@ def generate_summary(transcript):
 
 # Streamlit App
 st.title("YouTube Video Summarizer")
-youtube_url = st.text_input("Enter YouTube Video URL (e.g. https://www.youtube.com/watch?v=xxxxxxxxx")
+youtube_url = st.text_input("Enter YouTube Video URL e.g. https://www.youtube.com/watch?v=xxxxxxxxx")
 if youtube_url:
     transcript = get_youtube_transcript(youtube_url)
     summary = generate_summary(transcript)
