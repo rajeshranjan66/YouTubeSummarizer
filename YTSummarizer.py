@@ -64,3 +64,4 @@ if youtube_url:
     for chunk in summary_stream:
         summary_text += chunk.content + " "  # Append new content
         summary_container.write(summary_text)
+        summary_container.markdown(f"**{summary_text.strip()}**")  # Render formatted text
