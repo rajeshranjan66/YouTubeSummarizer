@@ -9,8 +9,10 @@ This chatbot will take youtube URL as an input , generate transcript from youtub
 Sample of you tube URL- https://www.youtube.com/watch?v=bPrmA1SEN2k
 
 Sample screens are below -
-<img width="1647" alt="image" src="https://github.com/user-attachments/assets/adf1e976-fd0b-4bcd-8ad0-047ff7b1d604" />
+<img width="1658" alt="image" src="https://github.com/user-attachments/assets/d7e9f710-afef-4822-8a05-bc9ee267f663" />
 
 
-<img width="1653" alt="image" src="https://github.com/user-attachments/assets/c556d313-d6e6-4a68-8e21-abfad27cd13d" />
+
+<img width="1666" alt="image" src="https://github.com/user-attachments/assets/367f4a73-5148-4672-ad69-f5f0c15c736e" />
+
 
