@@ -14,6 +14,7 @@ Sample screens are below -
 
 
 
-<img width="1666" alt="image" src="https://github.com/user-attachments/assets/367f4a73-5148-4672-ad69-f5f0c15c736e" />
+<img width="1664" alt="image" src="https://github.com/user-attachments/assets/198e9e8e-7019-4580-aae7-193fe0b1e21a" />
+
 
 
