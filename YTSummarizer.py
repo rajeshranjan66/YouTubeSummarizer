@@ -33,23 +33,27 @@ def get_youtube_transcript(video_url):
 
 # Function to generate summary using LangChain and OpenAI's LLM
 def generate_summary(transcript):
-    chat_model = ChatOpenAI(model_name="gpt-4", temperature=0.5)
+    chat_model = ChatOpenAI(model_name="gpt-4", temperature=0.5, streaming=True)
     messages = [
         SystemMessage(content="Summarize the following transcript from a YouTube video."),
         HumanMessage(content=transcript)
     ]
-    response = chat_model(messages)
-    return response.content
+    return chat_model.stream(messages)
+    #return response.content
 
 # Streamlit App
 st.title("YouTube Video Summarizer")
-youtube_url = st.text_input("Enter YouTube Video URL e.g. https://www.youtube.com/watch?v=xxxxxxxxx")
+youtube_url = st.text_input("Enter YouTube Video URL e.g. https://www.youtube.com/watch?v=......")
 if youtube_url:
     transcript = get_youtube_transcript(youtube_url)
-    summary = generate_summary(transcript)
-
     st.subheader("Transcript")
     st.text_area("", transcript, height=300)
-
     st.subheader("Summary")
-    st.write(summary)
+    summary_stream = generate_summary(transcript)
+    
+    for chunk in summary_stream:
+        st.write(chunk.content)
+    
+
+    
+    #st.write(summary)
