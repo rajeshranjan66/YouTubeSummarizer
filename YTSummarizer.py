@@ -1,5 +1,6 @@
 import streamlit as st
 import openai
+import os
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import SystemMessage, HumanMessage
 from youtube_transcript_api import YouTubeTranscriptApi
