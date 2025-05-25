@@ -1,4 +1,9 @@
 This chatbot will take youtube URL as an input , generate transcript from youtube video and summarize for you.
+ - Strealit used for UI
+ - Open AI LLM
+ - Python
+ - YouTube python library used to extract Transcript  -"youtube-transcript-api"
+
 Sampple of you tube URL- https://www.youtube.com/watch?v=bPrmA1SEN2k
 
 Sample screens are below -
