@@ -33,7 +33,7 @@ def get_youtube_transcript(video_url):
 
 # Function to generate summary using LangChain and OpenAI's LLM
 def generate_summary(transcript):
-    chat_model = ChatOpenAI(model_name="gpt-4", temperature=0.5)
+    chat_model = ChatOpenAI(model_name="gpt-4", temperature=0.5, stream=true)
     messages = [
         SystemMessage(content="Summarize the following transcript from a YouTube video."),
         HumanMessage(content=transcript)
