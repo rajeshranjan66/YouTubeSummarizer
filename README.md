@@ -1,6 +1,6 @@
 Chatbot can be accessed with below URL - https://youtube-summarizer-by-link.streamlit.app/
 This chatbot will take youtube URL as an input , generate transcript from youtube video and summarize for you.
- - Strealit used for UI
+ - Streamlit used for UI
  - Open AI LLM
  - Python
  - YouTube python library used to extract Transcript  -"youtube-transcript-api"
